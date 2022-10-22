@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categoria_modulos",
+  "info": {
+    "singularName": "categoria-modulo",
+    "pluralName": "categoria-modulos",
+    "displayName": "CategoriaModulo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imagem": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "cor": {
+      "type": "string",
+      "required": true
+    },
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "ativo": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

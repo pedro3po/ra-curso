@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modulos",
+  "info": {
+    "singularName": "modulo",
+    "pluralName": "modulos",
+    "displayName": "Modulo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "categoria_modulo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::categoria-modulo.categoria-modulo"
+    },
+    "perguntas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pergunta.pergunta"
+    },
+    "explanacaos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::explanacao.explanacao"
+    },
+    "trabalhos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::trabalho.trabalho"
+    }
+  }
+}

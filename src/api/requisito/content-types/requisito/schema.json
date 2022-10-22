@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requisitos",
+  "info": {
+    "singularName": "requisito",
+    "pluralName": "requisitos",
+    "displayName": "Requisito",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "curso_pai": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::curso.curso"
+    },
+    "curso_filhos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::curso.curso"
+    }
+  }
+}

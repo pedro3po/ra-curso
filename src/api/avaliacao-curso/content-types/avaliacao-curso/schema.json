@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "avaliacao_cursos",
+  "info": {
+    "singularName": "avaliacao-curso",
+    "pluralName": "avaliacao-cursos",
+    "displayName": "AvaliacaoCurso",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nota": {
+      "type": "integer",
+      "min": 0,
+      "max": 10,
+      "required": true,
+      "default": 10
+    },
+    "curso": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::curso.curso"
+    }
+  }
+}
